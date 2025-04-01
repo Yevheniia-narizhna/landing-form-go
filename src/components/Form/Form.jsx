@@ -1,7 +1,10 @@
+import Timer from "../Timer/Timer";
+
 const Form = () => {
   return (
     <div>
       <h2>Реєструйся просто зараз</h2>
+      <Timer />
       <form className="form">
         <label>
           <input

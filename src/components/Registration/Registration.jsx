@@ -5,7 +5,6 @@ const Registration = () => {
   return (
     <div class="container">
       <div class="content">Вміст форми або іншого блоку</div>
-      <Timer />
       <Form />
       {/* <div class="preview">
         <p>Частина контенту...</p>
