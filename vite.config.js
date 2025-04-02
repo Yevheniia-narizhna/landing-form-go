@@ -7,4 +7,9 @@ export default defineConfig({
   build: {
     sourcemap: true,
   },
+  server: {
+    proxy: {
+      "/register": "https://example.com",
+    },
+  },
 });
