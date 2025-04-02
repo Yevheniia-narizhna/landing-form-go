@@ -1,12 +1,48 @@
-# React + Vite
+# Реєстраційна форма для лендинг-сторінки
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Цей проєкт реалізує адаптивну форму реєстрації для лендинг-сторінки, яка відповідає всім вимогам адаптивного дизайну. У формі можна зареєструватися, заповнивши поля (ім'я, email, телефон) та погодившись з політикою конфіденційності та умовами користування. На мобільних пристроях форма відображається у вигляді модального вікна.
 
-Currently, two official plugins are available:
+Опис задачі
+Desktop та Tablet версії (ширина екрана ≥ 768px):
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Форма відображається прямо в секції.
 
-## Expanding the ESLint configuration
+Поля форми:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ім’я
+
+E-mail
+
+Номер телефону
+
+Чекбокс для згоди з Політикою конфіденційності та Умовами користування.
+
+Кнопка "Зареєструватися".
+
+Таймер для зворотного відліку до 01.03.2025.
+
+Мобільна версія (ширина екрана < 768px):
+
+Форма прихована.
+
+Кнопка "Зареєструватися" відображається на екрані.
+
+При натисканні на кнопку відображається модальне вікно з формою.
+
+Модальне вікно має хрестик для закриття.
+
+Додаткові вимоги:
+
+Використання адаптивного дизайну через CSS (без фреймворків).
+
+Коректне відображення елементів для різних розмірів екранів.
+
+Форму потрібно підсвічувати при некоректному заповненні (порожні поля, неправильний формат email, не встановлено чекбокс).
+
+Після натискання кнопки "Зареєструватися" надсилається POST-запит на довільний URL ендпоінта (наприклад, https://example.com/register).
+
+Посилання на "Політику конфіденційності" та "Умови користування послугами" встановлюються як #.
+
+Лінк на дизайн
+Дизайн сторінки можна переглянути за посиланням:
+[Figma дизайн](https://www.figma.com/design/T4z2aZI9SxFab0oQGMeqGW/Excel?node-id=1-2740&t=7wRSLZWprUUI4MW4-0)
