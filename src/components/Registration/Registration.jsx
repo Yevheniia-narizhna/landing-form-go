@@ -1,11 +1,12 @@
 import Form from "../Form/Form";
-import Timer from "../Timer/Timer";
+import s from "./Registration.module.css";
 
 const Registration = () => {
   return (
-    <div class="container">
-      <div class="content">Вміст форми або іншого блоку</div>
-      <Form />
+    <div className={s.formCont}>
+      <div class="content">
+        <Form />
+      </div>
       {/* <div class="preview">
         <p>Частина контенту...</p>
         <button class="open-modal">Зареєструватися</button>

@@ -1,7 +1,7 @@
 :root {
   font-family: Montserrat, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: normal;
 
   color-scheme: light dark;
   color: #010101;
@@ -39,12 +39,15 @@ h1 {
   font-size: 32px;
   line-height: 40px;
   color: #010101;
-  font-weight: 700;
+  font-weight: bold;
 }
-h2,
+h2 {
+  font-weight: bold;
+}
+
 h3,
 h4 {
-  font-weight: 500;
+  font-weight: medium;
 }
 p,
 h1,

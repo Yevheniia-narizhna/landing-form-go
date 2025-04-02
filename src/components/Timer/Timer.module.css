@@ -1,0 +1,38 @@
+.timerSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 24px;
+}
+.timerCont {
+  display: flex;
+  width: 222px;
+  justify-content: space-between;
+}
+.timeBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.timeValue {
+  color: #010101;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: bold;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+}
+.dots {
+  color: rgba(1, 1, 1, 0.2);
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: bold;
+}
+.timeLabel {
+  font-size: 8px;
+  font-weight: 600;
+}
+.colorSecond {
+  color: #0f7c41;
+}
