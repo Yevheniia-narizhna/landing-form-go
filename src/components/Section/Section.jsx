@@ -20,7 +20,9 @@ const Section = () => {
         Опануйте функціонал Microsoft Excel, автоматизуйте свою роботу та
         створюйте таблиці швидко <br /> і в задоволення
       </p>
-      <Registration />
+      <div className={s.registrSection}>
+        <Registration />
+      </div>
     </div>
   );
 };

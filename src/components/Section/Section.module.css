@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  /* position: relative; */
 }
 .sectionTitle {
   width: 280px;
@@ -58,17 +59,72 @@
   bottom: -3px;
   right: -3px;
 }
+
+/* .registrSection {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+} */
 .sectionInfo {
   padding-top: 16px;
+  width: 320px;
+}
+@media screen and (max-width: 767px) {
+  .registrSection {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 @media screen and (min-width: 768px) {
   .section {
     padding: 29px 32px;
+  }
+  .registrSection {
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .sectionInfo {
+    width: 336px;
+    padding-top: 24px;
+  }
+  .sectionTitle {
+    width: 300px;
+    padding-top: 24px;
+  }
+  .sectionCont {
+    padding-top: 45px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .section {
     padding: 40px 112px;
+  }
+  .registrSection {
+    right: 112px;
+  }
+  .sectionInfo {
+    width: 554px;
+  }
+  .sectionTitle {
+    width: 620px;
+    padding-top: 40px;
+    line-height: 68px;
+  }
+  .sectionInfo {
+    padding-top: 40px;
+    width: 554px;
+    font-size: 20px;
+  }
+  .sectionCont {
+    padding-top: 88px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
   }
 }

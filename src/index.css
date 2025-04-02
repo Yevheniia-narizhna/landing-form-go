@@ -14,8 +14,9 @@
 }
 
 a {
-  font-weight: 500;
+  font-weight: normal;
   text-decoration: inherit;
+  color: #3577f7;
 }
 
 body {
@@ -43,6 +44,7 @@ h1 {
 }
 h2 {
   font-weight: bold;
+  font-size: 20px;
 }
 
 h3,
@@ -58,13 +60,16 @@ h4 {
 }
 button {
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: bold;
   font-family: inherit;
   background-color: #0f7c41;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -74,6 +79,9 @@ button {
       url("/src/img/bg-tab-x2.png") 2x
     );
   }
+  h1 {
+    font-size: 36px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -82,5 +90,11 @@ button {
       url("/src/img/bg-desc-x1.png") 1x,
       url("/src/img/bg-desc-x2.png") 2x
     );
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 56px;
   }
 }

@@ -1,24 +1,47 @@
+import { useState } from "react";
 import Form from "../Form/Form";
+import Timer from "../Timer/Timer";
 import s from "./Registration.module.css";
+import { createPortal } from "react-dom";
 
 const Registration = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div className={s.formCont}>
-      <div class="content">
-        <Form />
-      </div>
-      {/* <div class="preview">
-        <p>Частина контенту...</p>
-        <button class="open-modal">Зареєструватися</button>
-      </div> */}
-
-      {/* <div class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <div class="content">Вміст модального вікна</div>
+    <>
+      <div className={s.formCont}>
+        <div className={s.formF}>
+          <Form />
         </div>
-      </div> */}
-    </div>
+      </div>
+      <div className={s.preview}>
+        <h2>Реєструйся просто зараз</h2>
+        <Timer />
+        <button onClick={() => setIsModalOpen(true)} className={s.openModal}>
+          Зареєструватися
+        </button>
+      </div>
+      {isModalOpen &&
+        createPortal(
+          <div className={s.modal}>
+            <div className={s.modalContent}>
+              <div className={s.logoClose}>
+                <img src="/logo.png" alt="logo"></img>
+                <img
+                  src="/Icon.png"
+                  alt="close"
+                  onClick={() => setIsModalOpen(false)}
+                  className={s.close}
+                ></img>
+              </div>
+
+              <div className={s.content}>
+                <Form />
+              </div>
+            </div>
+          </div>,
+          document.body
+        )}
+    </>
   );
 };
 export default Registration;
